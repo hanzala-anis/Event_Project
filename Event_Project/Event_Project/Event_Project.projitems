@@ -12,6 +12,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)AppStart\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Attendees\AttandeesHomePage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Attendees\MasterPages\Agenda.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Attendees\MasterPages\Attendees.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Attendees\MasterPages\MasterPageItems.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Attendees\MasterPages\MySchedule.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Attendees\MasterPages\Sponsors.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Attendees\MenuPage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CoreClasses\CommonFunctions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CoreClasses\EnumTypes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CoreClasses\WebRequestMaker.cs" />
@@ -84,5 +91,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Attendees\AttandeesHomePage.xaml" />
+    <None Include="$(MSBuildThisFileDirectory)Attendees\MasterPages\Agenda.xaml" />
+    <None Include="$(MSBuildThisFileDirectory)Attendees\MasterPages\Attendees.xaml" />
+    <None Include="$(MSBuildThisFileDirectory)Attendees\MasterPages\MySchedule.xaml" />
+    <None Include="$(MSBuildThisFileDirectory)Attendees\MasterPages\Sponsors.xaml" />
+    <None Include="$(MSBuildThisFileDirectory)Attendees\MenuPage.xaml" />
   </ItemGroup>
 </Project>
