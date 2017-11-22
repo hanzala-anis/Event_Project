@@ -13,7 +13,7 @@ namespace Event_Project
 		{
 			InitializeComponent();
 
-			MainPage = new Event_Project.LoginPage();
+			MainPage = new NavigationPage(new Event_Project.Login.LoginEmailPage());
 		}
 
 		protected override void OnStart ()

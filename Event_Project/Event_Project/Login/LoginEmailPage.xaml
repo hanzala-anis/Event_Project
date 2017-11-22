@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Event_Project.Login.LoginEmailPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout HorizontalOptions="Center">
+                <Image Source="@drawable/Icon"></Image>
+                <Label Text="powered by GPS"></Label>
+                <Entry Placeholder="Email"></Entry>
+                <Button x:Name="btnEmail_LoginEmailPage" Text="OK" Clicked="btnEmail_LoginEmailPage_Clicked" ></Button>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" >
+
+                <StackLayout HorizontalOptions="Start">
+                    <Label Text=" " ></Label>
+                    <Label Text="Keep me logged in ?" ></Label>
+
+                </StackLayout>
+                <StackLayout HorizontalOptions="EndAndExpand">
+                    <Label Text="No   Yes"></Label>
+                    <Switch BackgroundColor="AliceBlue" ></Switch>
+                </StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
