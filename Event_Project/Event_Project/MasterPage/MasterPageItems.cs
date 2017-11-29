@@ -6,6 +6,6 @@ namespace Event_Project.MasterPage
 {
     class MasterPageItems
     {
-        //HANZALA
+        //faizan
     }
 }
