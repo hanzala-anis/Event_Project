@@ -16,6 +16,8 @@ namespace Event_Project.Login
 		{
 			InitializeComponent ();
 
+            //Hanzala
+
             EventPicker_LoginChooseEventPage.Items.Add("Event 1");
             EventPicker_LoginChooseEventPage.Items.Add("Event 2");
             EventPicker_LoginChooseEventPage.Items.Add("Event 3");
