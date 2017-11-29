@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using Event_Project.MasterPageMenu;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,6 +28,7 @@ namespace Event_Project.Login
         {
              var name = EventPicker_LoginChooseEventPage.Items[EventPicker_LoginChooseEventPage.SelectedIndex];
             DisplayAlert(name , "Selected Event","OK");
+            Navigation.PushModalAsync(new MasterHomePage());
         }
     }
 }

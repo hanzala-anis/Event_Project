@@ -1,4 +1,4 @@
-﻿using Event_Project.Attendees.MasterPages;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Event_Project.Attendees
+namespace Event_Project.MasterPageMenu
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class MenuPage : ContentPage
@@ -22,17 +22,19 @@ namespace Event_Project.Attendees
 
             // master page's table class
             var masterPageItems = new List<MasterPageItems>();
-            //masterPageItems.Add(new MasterPageItems {
-            //    Title ="Sponsors",
-            //    IconSource= "@drawable/ic_supervisor_account_black_24dp",
-            //    TargetType = typeof(Sponsors)
 
-            //});
-            masterPageItems.Add(new MasterPageItems
+            masterPageItems.Add(new MasterPageItems {
+            Title ="Sponsors",
+            IconSource= "Icon.png",
+            TargetType = typeof(Sponsors.Sponsors)
+            });
+
+           
+                masterPageItems.Add(new MasterPageItems
             {
                 Title = "Attendees",
                 IconSource = "@drawable/ic_flag_black_24dp",
-                TargetType = typeof(Attendees.MasterPages.Attendees)
+                TargetType = typeof(Attendees.Attendees)
 
             });
             //masterPageItems.Add(new MasterPageItems

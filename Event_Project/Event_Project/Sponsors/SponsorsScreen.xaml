@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Event_Project.Sponsors.SponsorsScreen"
+             Title="Sponsors Screen">
+
+
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem Text="Sponsors"
+                         Priority="0"
+                         x:Name="bn"
+                         Order="Secondary"/>
+        <ToolbarItem Text="Attendees"
+                         Priority="1"
+                         Order="Secondary"/>
+        <ToolbarItem Text="Agenda"
+                         Icon="@drawable/add"
+                         Priority="2"
+                         Order="Secondary"/>
+        <ToolbarItem Text="MySchedule"
+                         Priority="3"
+                         Order="Secondary"/>
+
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Button Text="Sort A-Z" Grid.Column="0" BackgroundColor="BlueViolet" TextColor="Black"/>
+            <Button x:Name="sortingByCountry" Text="By Country" Grid.Column="1" Clicked="sortingByCountry_Clicked"/>
+        </Grid>
+
+
+        <!--List of Attendess (binding with API)-->
+        <ListView x:Name="sponsorsList" SeparatorColor="Green">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+
+                    <ImageCell Text="{Binding id}"  
+                                   Detail="{Binding title}" 
+                                   ImageSource="{Binding url}"/>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+</ContentPage>

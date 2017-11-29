@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Event_Project.Attendees;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,8 +14,12 @@ namespace Event_Project
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPage(new Event_Project.Login.LoginEmailPage());
-		}
+            MainPage = new NavigationPage(new Event_Project.Login.LoginEmailPage());
+
+            //MainPage = new NavigationPage(new AttendeesCarouselPage());
+
+            //MainPage = new NavigationPage(new AttandeesHomePage());
+        }
 
 		protected override void OnStart ()
 		{

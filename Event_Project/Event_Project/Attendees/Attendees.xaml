@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Event_Project.Attendees.MasterPages.Attendees" 
+             x:Class="Event_Project.Attendees.Attendees" 
              Title="Attendees page">
     <!--<StackLayout HorizontalOptions="Center" >
         <Image Source="@drawable/ic_supervisor_account_black_24dp"></Image>
@@ -12,10 +12,12 @@
         <ToolbarItem Text="New"
                      Icon="@drawable/add"
                      Priority="0"
-                     Order="Secondary"/>
+                     Order="Secondary"
+                     Clicked="ToolbarItem_Clicked"/>
         <ToolbarItem Text="new 1"
                      Priority="1"
-                     Order="Secondary"/>
+                     Order="Secondary"
+                     />
 
     </ContentPage.ToolbarItems>
     <ScrollView>

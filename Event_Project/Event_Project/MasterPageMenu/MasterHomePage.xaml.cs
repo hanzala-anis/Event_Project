@@ -1,4 +1,4 @@
-﻿using Event_Project.Attendees.MasterPages;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Event_Project.Attendees
+namespace Event_Project.MasterPageMenu
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AttandeesHomePage : MasterDetailPage
+	public partial class MasterHomePage : MasterDetailPage
     {
-		public AttandeesHomePage ()
+		public MasterHomePage()
 		{
 			InitializeComponent ();
             // Listview Event with master pages 

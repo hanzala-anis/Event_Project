@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Event_Project.Attendees.MasterPages
+namespace Event_Project.Attendees
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Attendees : ContentPage
@@ -16,6 +16,13 @@ namespace Event_Project.Attendees.MasterPages
 		{
 			InitializeComponent ();
 		}
+
+        private void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new AttendeesCarouselPage());
+        }
+
+
 
         //protected override bool OnBackButtonPressed()
         //{

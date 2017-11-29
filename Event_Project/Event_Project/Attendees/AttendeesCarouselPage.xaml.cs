@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Event_Project.Attendees.MasterPages
+namespace Event_Project.Attendees
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Sponsors : ContentPage
-	{
-		public Sponsors ()
+	public partial class AttendeesCarouselPage : CarouselPage
+    {
+		public AttendeesCarouselPage ()
 		{
 			InitializeComponent ();
 		}

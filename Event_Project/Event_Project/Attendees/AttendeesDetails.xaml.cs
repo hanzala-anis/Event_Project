@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Event_Project.Attendees.MasterPages
+namespace Event_Project.Attendees
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MySchedule : ContentPage
+	public partial class AttendeesDetails : ContentPage
 	{
-		public MySchedule ()
+		public AttendeesDetails ()
 		{
 			InitializeComponent ();
 		}

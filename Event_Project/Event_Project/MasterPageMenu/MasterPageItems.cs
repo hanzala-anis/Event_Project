@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Event_Project.Attendees.MasterPages
+namespace Event_Project.MasterPageMenu
 {
     class MasterPageItems
     {
