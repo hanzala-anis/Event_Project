@@ -5,10 +5,10 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout HorizontalOptions="Center">
+            <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
                 <Image Source="@drawable/Icon"></Image>
                 <Label Text="powered by GPS"></Label>
-                <Entry Placeholder="Email"></Entry>
+                <Entry x:Name="entEmail_LoginEmailPage" Placeholder="Email"></Entry>
                 <Button x:Name="btnEmail_LoginEmailPage" Text="OK" Clicked="btnEmail_LoginEmailPage_Clicked" ></Button>
             </StackLayout>
 

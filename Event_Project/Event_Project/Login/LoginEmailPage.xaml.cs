@@ -20,8 +20,9 @@ namespace Event_Project.Login
 
         private async void btnEmail_LoginEmailPage_Clicked(object sender, EventArgs e)
         {
-          //  await Navigation.PushAsync(new LoginPasswordPage());
-            await Navigation.PushAsync(new Login.LoginPasswordPage());
+            //  await Navigation.PushAsync(new LoginPasswordPage());
+            string email =entEmail_LoginEmailPage.Text;
+            await Navigation.PushAsync(new Login.LoginPasswordPage(email));
         }
     }
 }
