@@ -6,6 +6,8 @@ namespace Event_Project.MasterPage
 {
     class MasterPageItems
     {
-        //faizan
+       public string Title { get; set; }
+        public string Iconsource { get; set; }
+        public Type TargetType { get; set; }
     }
 }

@@ -9,8 +9,28 @@
     <Import_RootNamespace>Event_Project</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AgendaSection\AgendaHome.xaml.cs">
+      <DependentUpon>AgendaHome.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)AppStart\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)AttendeesSection\AttendeesCarouselPage.xaml.cs">
+      <DependentUpon>AttendeesCarouselPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)AttendeesSection\AttendeesDetail.xaml.cs">
+      <DependentUpon>AttendeesDetail.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)AttendeesSection\AttendeesHome.xaml.cs">
+      <DependentUpon>AttendeesHome.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)AttendeesSection\AttendessListScreen.xaml.cs">
+      <DependentUpon>AttendessListScreen.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)CoreClasses\CommonFunctions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CoreClasses\EnumTypes.cs" />
@@ -46,6 +66,26 @@
     <Compile Include="$(MSBuildThisFileDirectory)MasterPage\MasterPageItems.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MasterPage\MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MyScheduleSection\MyScheduleHome.xaml.cs">
+      <DependentUpon>MyScheduleHome.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)SponsorsSection\SponsorsCarouselPage.xaml.cs">
+      <DependentUpon>SponsorsCarouselPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)SponsorsSection\SponsorsDetail.xaml.cs">
+      <DependentUpon>SponsorsDetail.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)SponsorsSection\SponsorsHome.xaml.cs">
+      <DependentUpon>SponsorsHome.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)SponsorsSection\SponsorsListScreen.xaml.cs">
+      <DependentUpon>SponsorsListScreen.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -102,6 +142,38 @@
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MasterPage\MenuPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AgendaSection\AgendaHome.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AttendeesSection\AttendeesCarouselPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AttendeesSection\AttendeesDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AttendeesSection\AttendeesHome.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AttendeesSection\AttendessListScreen.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MyScheduleSection\MyScheduleHome.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SponsorsSection\SponsorsCarouselPage.xaml">
+      <CustomToolNamespace>MSBuild:UpdateDesignTimeXaml</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SponsorsSection\SponsorsDetail.xaml">
+      <CustomToolNamespace>MSBuild:UpdateDesignTimeXaml</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SponsorsSection\SponsorsHome.xaml">
+      <CustomToolNamespace>MSBuild:UpdateDesignTimeXaml</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SponsorsSection\SponsorsListScreen.xaml">
+      <CustomToolNamespace>MSBuild:UpdateDesignTimeXaml</CustomToolNamespace>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

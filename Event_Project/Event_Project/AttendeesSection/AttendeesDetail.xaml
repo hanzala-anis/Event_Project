@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Event_Project.AttendeesSection.AttendeesDetail">
+
+    <StackLayout>
+
+        <!--Main attendees's header Image-->
+        <Image Source="det.jpg"/>
+
+        <StackLayout HorizontalOptions="Center">
+            <!--header Header-->
+            <Label FontSize="Large">Heading Here</Label>
+
+            <!--Description about attendees-->
+            <Label FontSize="Small">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </Label>
+
+
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
