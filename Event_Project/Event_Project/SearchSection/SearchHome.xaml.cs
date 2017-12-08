@@ -9,6 +9,7 @@ using Xamarin.Forms.Xaml;
 
 namespace Event_Project.SearchSection
 {
+    //Zack
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SearchHome : ContentPage
 	{
