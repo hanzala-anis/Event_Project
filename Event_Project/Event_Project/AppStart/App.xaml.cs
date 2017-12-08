@@ -18,7 +18,7 @@ namespace Event_Project
             //MainPage = new MasterHomePage();
 
         }
-
+        //Zack
 		protected override void OnStart ()
 		{
 			// Handle when your app starts
@@ -31,6 +31,7 @@ namespace Event_Project
 
 		protected override void OnResume ()
 		{
+
 			// Handle when your app resumes
 		}
 	}
