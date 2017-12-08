@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Event_Project.AgendaSection
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AgendaHome : ContentPage
+	public partial class AgendaScreen : ContentPage
 	{
-		public AgendaHome ()
+		public AgendaScreen ()
 		{
 			InitializeComponent ();
 		}
-
-        private void ToolbarItem_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushModalAsync(new AgendaScreen());
-        }
-    }
+	}
 }

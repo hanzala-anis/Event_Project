@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Event_Project.MyScheduleSection.MyScheduleScreen">
+    <StackLayout>
+        <ScrollView Orientation="Horizontal"    >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+
+
+            </Grid.ColumnDefinitions>
+
+             <Button Text="Sposnsors" Grid.Column="0"/>
+            <Button Text="Attendees" Grid.Column="1"/>
+            <Button Text="Events" Grid.Column="2"/>
+            <Button Text="Social" Grid.Column="3"/>
+            <Button Text="All" Grid.Column="4"/>
+
+            <Button Text="Attendees" Grid.Column="5"/>
+            <Button Text="Events" Grid.Column="6"/>
+            <Button Text="Social" Grid.Column="7"/>
+            <Button Text="All" Grid.Column="8"/>
+
+            
+
+        </Grid>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

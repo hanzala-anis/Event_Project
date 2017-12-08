@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Event_Project.AgendaSection
+namespace Event_Project.SearchSection
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AgendaHome : ContentPage
+	public partial class SearchHome : ContentPage
 	{
-		public AgendaHome ()
+		public SearchHome ()
 		{
 			InitializeComponent ();
 		}
 
         private void ToolbarItem_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new AgendaScreen());
+            Navigation.PushModalAsync(new SearchScreen());
         }
     }
 }

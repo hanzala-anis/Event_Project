@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Event_Project.AttendeesSection.AttendeesHome"
              Title="AttendeesHomePage"
-             Padding="100,0,0,0">
+             >
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="New"
@@ -11,9 +11,10 @@
                      Priority="0"
                      Order="Secondary"
                      Clicked="ToolbarItem_Clicked"/>
-        <ToolbarItem Text="new 1"
+        <ToolbarItem Text="Search"
                      Priority="1"
                      Order="Secondary"
+                     Clicked="ToolbarItem_Clicked_1"
                      />
 
     </ContentPage.ToolbarItems>

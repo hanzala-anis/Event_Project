@@ -52,10 +52,11 @@ namespace Event_Project.AttendeesSection
 
         private void _webClient_OnResponseRecived(object ResponseData)
         {
-         //   var posts = JsonConvert.DeserializeObject<List<Post>>(ResponseData.ToString());
-          //  _posts = new ObservableCollection<Post>(posts);
-          //  attendeesList.ItemsSource = _posts;
-         //   attendeesList.IsPullToRefreshEnabled = true;
+            var posts = JsonConvert.DeserializeObject<List<Post>>(ResponseData.ToString());
+            _posts = new ObservableCollection<Post>(posts);
+            attendeesList.ItemsSource = _posts;
+            
+            attendeesList.IsPullToRefreshEnabled = true;
         }
         // navigate on Detail Page
         private void sortingByCountry_Clicked(object sender, EventArgs e)

@@ -8,7 +8,8 @@
 
 
     <MasterDetailPage.Master>
-        <local:MenuPage x:Name="masterPage"></local:MenuPage>
+        <local:MenuPage x:Name="masterPage" />
+
     </MasterDetailPage.Master>
     <MasterDetailPage.Detail>
         <NavigationPage>

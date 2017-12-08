@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Event_Project.MasterPage;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,11 @@ namespace Event_Project
 		public App ()
 		{
 			InitializeComponent();
+          // MainPage = new MyScheduleSection.MyScheduleScreen();
+             MainPage = new NavigationPage(new Event_Project.Login.LoginEmailPage());
+            //MainPage = new MasterHomePage();
 
-			MainPage = new NavigationPage(new Event_Project.Login.LoginEmailPage());
-		}
+        }
 
 		protected override void OnStart ()
 		{

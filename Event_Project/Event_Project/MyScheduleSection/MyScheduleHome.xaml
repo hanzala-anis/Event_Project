@@ -1,5 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Event_Project.MyScheduleSection.MyScheduleHome">
+             x:Class="Event_Project.MyScheduleSection.MyScheduleHome"
+             Title="MySchedulePage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="New"
+                     Icon="@drawable/add"
+                     Priority="0"
+                     Order="Secondary"
+                     />
+        <ToolbarItem Text="new 1"
+                     Priority="1"
+                     Order="Secondary"
+                     />
+
+    </ContentPage.ToolbarItems>
+
+
+    <ScrollView>
+        <StackLayout HorizontalOptions="FillAndExpand">
+
+
+
+            <Image Source="z.png"/>
+
+            <Button Text="Alert" HeightRequest="70" HorizontalOptions="FillAndExpand" />
+            <BoxView BackgroundColor="BlanchedAlmond" HeightRequest="380" MinimumWidthRequest="150" WidthRequest="300" HorizontalOptions="FillAndExpand"  >
+
+            </BoxView>
+            <Grid HorizontalOptions="CenterAndExpand">
+                <Grid  HorizontalOptions="Start" >
+                    <Button Text="Switch events" WidthRequest="150" />
+
+
+                </Grid>
+                <Grid HorizontalOptions="End">
+                    <Button Text="LogOut" WidthRequest="150" />
+
+
+                </Grid>
+            </Grid>
+
+        </StackLayout>
+    </ScrollView>
+
 </ContentPage>

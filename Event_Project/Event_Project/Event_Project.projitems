@@ -13,6 +13,10 @@
       <DependentUpon>AgendaHome.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)AgendaSection\AgendaScreen.xaml.cs">
+      <DependentUpon>AgendaScreen.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)AppStart\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -70,6 +74,18 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MyScheduleSection\MyScheduleHome.xaml.cs">
       <DependentUpon>MyScheduleHome.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MyScheduleSection\MyScheduleScreen.xaml.cs">
+<DependentUpon>MyScheduleScreen.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)SearchSection\SearchHome.xaml.cs">
+      <DependentUpon>SearchHome.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)SearchSection\SearchScreen.xaml.cs">
+      <DependentUpon>SearchScreen.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)SponsorsSection\SponsorsCarouselPage.xaml.cs">
@@ -174,6 +190,26 @@
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)SponsorsSection\SponsorsListScreen.xaml">
       <CustomToolNamespace>MSBuild:UpdateDesignTimeXaml</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AgendaSection\AgendaScreen.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SearchSection\SearchHome.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SearchSection\SearchScreen.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MyScheduleSection\MyScheduleScreen.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

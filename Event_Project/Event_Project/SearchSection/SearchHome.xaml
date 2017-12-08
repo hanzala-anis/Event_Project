@@ -1,16 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Event_Project.SponsorsSection.SponsorsHome"
-             Title="SponsorsHomePage"
-             >
-
+             x:Class="Event_Project.SearchSection.SearchHome"
+             Title="SearchHomePage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="New"
+        <ToolbarItem Text="Search Screen"
                      Icon="@drawable/add"
                      Priority="0"
                      Order="Secondary"
-                     Clicked="ToolbarItem_Clicked"/>
+                     Clicked="ToolbarItem_Clicked"
+                   />
         <ToolbarItem Text="new 1"
                      Priority="1"
                      Order="Secondary"
@@ -27,7 +26,7 @@
             <Image Source="z.png"/>
 
             <Button Text="Alert" HeightRequest="70" HorizontalOptions="FillAndExpand" />
-            <BoxView BackgroundColor="Coral" HeightRequest="380" MinimumWidthRequest="150" WidthRequest="300" HorizontalOptions="FillAndExpand"  >
+            <BoxView BackgroundColor="BurlyWood" HeightRequest="380" MinimumWidthRequest="150" WidthRequest="300" HorizontalOptions="FillAndExpand"  >
 
             </BoxView>
             <Grid HorizontalOptions="CenterAndExpand">
@@ -45,6 +44,4 @@
 
         </StackLayout>
     </ScrollView>
-
-
 </ContentPage>

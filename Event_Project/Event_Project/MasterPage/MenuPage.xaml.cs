@@ -1,6 +1,7 @@
 ﻿using Event_Project.AgendaSection;
 using Event_Project.AttendeesSection;
 using Event_Project.MyScheduleSection;
+using Event_Project.SearchSection;
 using Event_Project.SponsorsSection;
 using System;
 using System.Collections.Generic;
@@ -25,27 +26,63 @@ namespace Event_Project.MasterPage
             masterPageItem.Add(new MasterPageItems
             {
                 Title="Sponsors",
-                Iconsource="Icon.png",
+                IconSource = "ic_supervisor_account_black_24dp.png",
                 TargetType = typeof(SponsorsHome)
             });
             masterPageItem.Add(new MasterPageItems
             {
                 Title = "Attendees",
-                Iconsource = "Icon.png",
+                IconSource = "ic_flag_black_24dp.png",
                 TargetType = typeof(AttendeesHome)
             });
             masterPageItem.Add(new MasterPageItems
             {
                 Title = "Agenda",
-                Iconsource = "Icon.png",
+                IconSource = "ic_favorite_black_24dp.png",
+                TargetType = typeof(AgendaHome)
+            });
+            masterPageItem.Add(new MasterPageItems
+            {
+                Title = "My Agenda (link N/A)",
+                IconSource = "ic_assignment_turned_in_black_24dp.png",
                 TargetType = typeof(AgendaHome)
             });
             masterPageItem.Add(new MasterPageItems
             {
                 Title = "MySchedule",
-                Iconsource = "Icon.png",
+                IconSource = "ic_loyalty_black_24dp.png",
                 TargetType = typeof(MyScheduleHome)
             });
+            masterPageItem.Add(new MasterPageItems {
+                Title = "Photos (link N/A)",
+                IconSource = "ic_perm_media_black_24dp",
+                TargetType= typeof(AttendeesHome)
+
+            });
+
+            masterPageItem.Add(new MasterPageItems
+            {
+                Title = "Scan QR Code (link N/A)",
+                IconSource = "ic_crop_free_black_24dp",
+                TargetType = typeof(AttendeesHome)
+
+            });
+            masterPageItem.Add(new MasterPageItems
+            {
+                Title = "Map (link N/A)",
+                IconSource = "ic_map_black_24dp",
+                TargetType = typeof(AttendeesHome)
+
+            });
+            masterPageItem.Add(new MasterPageItems
+            {
+                Title = "Search Screen",
+                IconSource = "ic_search_black_24dp",
+                TargetType = typeof(SearchHome)
+
+            }); 
+
+
             listView.ItemsSource = masterPageItem;
 		}
 	}

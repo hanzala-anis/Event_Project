@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Event_Project.SearchSection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,11 @@ namespace Event_Project.AttendeesSection
         private void ToolbarItem_Clicked(object sender, EventArgs e)
         {
             Navigation.PushModalAsync(new AttendeesCarouselPage());
+        }
+
+        private void ToolbarItem_Clicked_1(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new SearchHome());
         }
     }
 }
